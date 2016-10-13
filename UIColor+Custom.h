@@ -17,9 +17,3 @@
 + (UIColor *)colorWithRGB:(int)r g:(int)g b:(int)b;
 
 @end
-
-@interface UIColor (ZS)
-
-+ (UIColor *)colorWithNavigationBarBackground;
-
-@end
