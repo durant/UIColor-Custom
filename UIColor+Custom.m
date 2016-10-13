@@ -36,14 +36,3 @@
 }
 
 @end
-
-@implementation UIColor (ZS)
-
-
-+ (UIColor *)colorWithNavigationBarBackground
-{
-    return  [UIColor colorWithRGB:38 g:153 b:252];
-}
-
-
-@end
