@@ -44,7 +44,7 @@
 + (UIColor *)colorWithRGBAString:(NSString *)hexStr
 {
     unsigned long rgb = [self stringConverToHex:hexStr];
-    return [self colorWithRGB:rgb];
+    return [self colorWithRGBA:rgb];
 }
 
 
