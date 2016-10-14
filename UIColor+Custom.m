@@ -35,4 +35,25 @@
     return [UIColor colorWithRed:rr green:gg blue:bb alpha:1.0];
 }
 
++ (UIColor *)colorWithRGBString:(NSString *)hexStr
+{
+    unsigned long rgb = [self stringConverToHex:hexStr];
+    return [self colorWithRGB:rgb];
+}
+
++ (UIColor *)colorWithRGBAString:(NSString *)hexStr
+{
+    unsigned long rgb = [self stringConverToHex:hexStr];
+    return [self colorWithRGB:rgb];
+}
+
+
++ (unsigned long)stringConverToHex:(NSString *)hexStr
+{
+    //strtoul如果传入的字符开头是“0x”,那么第三个参数是0，也是会转为十六进制的,这样写也可以：
+//    unsigned long red = strtoul([@"0x6587" UTF8String],0,0);
+    unsigned long hex = strtoul([rgbStr UTF8String],NULL,16);
+    return hex;
+}
+
 @end
