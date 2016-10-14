@@ -16,4 +16,8 @@
 
 + (UIColor *)colorWithRGB:(int)r g:(int)g b:(int)b;
 
++ (UIColor *)colorWithRGBString:(NSString *)hexStr;
+
++ (UIColor *)colorWithRGBAString:(NSString *)hexStr;
+
 @end
