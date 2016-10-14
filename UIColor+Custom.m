@@ -35,18 +35,18 @@
     return [UIColor colorWithRed:rr green:gg blue:bb alpha:1.0];
 }
 
+// @"0xEEEEEE"
 + (UIColor *)colorWithRGBString:(NSString *)hexStr
 {
     unsigned long rgb = [self stringConverToHex:hexStr];
     return [self colorWithRGB:rgb];
 }
-
+// @"0xEEEEEEFF"
 + (UIColor *)colorWithRGBAString:(NSString *)hexStr
 {
     unsigned long rgb = [self stringConverToHex:hexStr];
     return [self colorWithRGBA:rgb];
 }
-
 
 + (unsigned long)stringConverToHex:(NSString *)hexStr
 {
